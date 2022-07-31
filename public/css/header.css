@@ -1,0 +1,147 @@
+ body{
+    background-color: black;
+ }
+ header{
+        background-color: black;
+}
+.head1{
+        text-shadow: 8px 8px 5px rgba(14, 13, 13, 0.68);
+}
+nav a{
+    line-height: 70px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.link1{
+    transition: all ease-in-out 0.1s;
+}
+.link2{
+    transition: all ease-in-out 0.1s;
+}
+.link3{
+    transition: all ease-in-out 0.1s;
+}
+.link1add{
+    border-bottom: 4px solid white;
+}
+.link2add{
+    border-bottom: 4px solid red;
+}
+.link3add{
+    border-bottom: 4px solid yellow;
+}
+.porfolio{
+    height: 80vh;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+    transition: all ease-in-out 0.8s;
+}
+.porfolioadd{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateX(0%);
+}
+.skill{
+    opacity: 0;
+    transition: all ease-in-out 0.8s;
+    transform: translateX(-100px);
+    pointer-events: none;
+    position: absolute;
+    top: 54%;
+}
+.skilladd{
+    opacity: 1;
+    transform: translateY(0%);
+}
+@media screen and (max-width: 770px){
+    .skill{
+        position: absolute;
+        top: 34%;
+    }
+}
+.personaldetails{
+    transform: translateY(-100%);
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: all ease-in-out 0.8s;
+}
+.dpadd{
+    transform: translateY(-80%);
+    opacity: 1;
+    pointer-events: all;
+}
+.vd1{
+    transform: all ease-in-out 1s;
+    opacity: 0.5;
+}
+.vd2{
+    transform: all ease-in-out 1s;
+    opacity: 0.5;
+}
+.vd3{
+    transform: all ease-in-out 1s;
+    opacity: 0.5;
+}
+.vd4{
+    transform: all ease-in-out 1s;
+    opacity: 0.5;
+}
+.vd5{
+    transform: all ease-in-out 1s;
+    opacity: 0.5;
+}
+.vd6{
+    transform: all ease-in-out 1s;
+    opacity: 0.5;
+}
+.vd1:hover{
+    opacity: 1;
+}
+.vd2:hover{
+    opacity: 1;
+}
+.vd3:hover{
+    opacity: 1;
+}
+.vd4:hover{
+    opacity: 1;
+}
+.vd5:hover{
+    opacity: 1;
+}
+.vd6:hover{
+    opacity: 1;
+}
+input[type=range] {
+    height: 38px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    color: red;
+    width: 100%;
+  }input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #000000;
+    background: red;
+    border-radius: 5px;
+    border: 1px solid #000000;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 2px #000000;
+    border: 1px solid white;
+    height: 30px;
+    width: 15px;
+    border-radius: 5px;
+    background: black;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -11px;
+  }
